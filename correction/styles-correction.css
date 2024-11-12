@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+.row-limit-size {
+    max-width: 1400px;
+    width: 100%;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bg-green {
+	background-color: #528454;
+}
+
+body > header {
+	font-family: "Roboto", sans-serif;
+}
+
+#head-top {
+    background-color: #795F3A;
+}
+
+#head-top ul {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+img.picto {
+	float: left;
+	margin: 10px 10px 0 0;
+}
+
+#head-top a {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	color: #FFF;
+	font-size: .9rem;
+}
+
+#head-top a:hover {
+	text-decoration: underline;
+}
+
+#head-bottom {
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+}
+
+#head-bottom > figure > img {
+	display: block;
+}
+
+#head-bottom > nav > ul {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+#head-bottom > nav > ul > li > a {
+	display: block;
+	height: 107px;
+	line-height: 107px;
+	padding: 0 30px;
+	color: #528454;
+	position: relative;
+	
+}
+
+#head-bottom > nav > ul > li > a::after {
+	content: '';
+	width: 0;
+	height: 3px;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	background-color: #528454;
+	transition: all .5s ease;
+}
+
+#head-bottom > nav > ul > li:hover > a::after {
+	width: 100%;
+	left: 0;
+}
+
+
+#hero {
+	background: url(../../img/bg-hero.jpg) center/cover no-repeat;
+	color: #FFF;
+	padding: 250px 0 150px 0;
+}
+
+#call-to-action {
+	display: flex;
+	gap: 20px;
+}
+
+main > section.row-limit-size, main > section {
+	padding: 200px 50px;
+}
+
+main > section > figure, main > section > div {
+	width: 50%;
+}
+
+main > section > figure {
+	text-align: right;
+}
+
+main > section > figure > img {
+	box-shadow: 30px 30px 0 #52845435, -30px -30px 0 #52845435;
+}
+
+main > section > div {
+	padding: 0 100px 0 100px;
+}
+
+.section-bg, .bg-green {
+	position: relative;
+	overflow: hidden;
+}
+
+.section-bg::before {
+	content: '';
+	width: 600px;
+	height: 350px;
+	position: absolute;
+	right: 0;
+	top: -90px;
+	background: url(../../img/bg-branche.png) no-repeat;
+	opacity: 10%;
+}
+
+.bg-green::after {
+	content: '';
+	width: 600px;
+	height: 350px;
+	position: absolute;
+	bottom: -130px;
+	right: 0;
+	background: url(../img/bg-branche-white.png) no-repeat;
+	opacity: 10%;
+}
+
+a.button {
+	display: inline-block;
+	height: 47px;
+	line-height: 47px;
+	margin-top: 30px;
+	padding: 0 30px;
+	transition: all .2s ease;
+}
+
+.button-white {
+	border: 2px solid #528454;
+	background-color: #FFF;
+	color: #528454;
+}
+
+.button-green {
+	border: 2px solid #528454;
+	background-color: #528454;
+	color: #FFF;
+}
+
+a.button-white:hover {
+	background-color: #528454;
+	color: #FFF;
+	box-shadow: 1px 1px 8px #999999;
+}
+
+a.button-green:hover {
+	background-color: #FFF;
+	color: #528454;
+	box-shadow: 1px 1px 8px #999999;
+}
+
+a.button-border-white {
+	border: 2px solid #FFF;
+}
+
+h1 {
+	font-family: "Libre Baskerville", serif;
+	font-size: 3.5rem;
+	color: #FFF;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-family: "Libre Baskerville", serif;
+	font-size: 2rem;
+	color: #528454;
+	margin-bottom: 20px;
+}
+
+.white {
+	color: white;
+}
+
+section p {
+	font-family: "Roboto", sans-serif;
+	font-size: .9rem;
+	color: #666;
+	line-height: 1.5rem;
+	margin: 20px 0;
+}
+
